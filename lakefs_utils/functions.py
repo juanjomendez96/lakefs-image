@@ -21,7 +21,7 @@ class LakeFSClass:
             password=os.getenv("LAKEFS_INSTALLATION_SECRET_ACCESS_KEY"),
         )
 
-        self.fs = LakeFSFileSystem()
+        self.fs = LakeFSFileSystem(configfile="configs/.lakectl.yaml")
 
     def print_repositories(self):
         for repo in lakefs.repositories():
