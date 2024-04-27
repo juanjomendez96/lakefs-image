@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "lakefs_utils"
+version = "0.1.0"
+description = "lakeFS utils"
+authors = ["Juan José Méndez <juanjo96mt@gmail.com>"]
+readme = "README.md"
+packages = [{include = "lakefs_utils"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+lakefs = "^0.6.0"
+python-dotenv = "^1.0.1"
+lakefs-spec = "^0.8.0.post0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.7b0", python = ">=3.6.2"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

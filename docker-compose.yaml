@@ -1,0 +1,9 @@
+name: lakefs-image
+services:
+  lakefs:
+    container_name: lakefs
+    image: treeverse/lakefs:1.7.0
+    ports:
+      - 8000:8000
+    env_file:
+      - configs/.env
