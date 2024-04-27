@@ -12,6 +12,8 @@ class LakeFSClass:
         self.client = None
         self.file_sys = None
 
+        self.connect_lakefs()
+
     def connect_lakefs(self):
         self.clt = Client(
             host=os.getenv("LAKEFS_HOST"),
