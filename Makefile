@@ -2,7 +2,7 @@ up:
 	docker compose up -d
 
 stop:
-	docker stop lakefs minio
+	docker stop lakefs
 
 rm:
-	docker rm lakefs minio
+	docker rm lakefs
